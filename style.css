@@ -1,12 +1,80 @@
+:root{
+    --moonTop-color: #e9e9e9;
+    --moonBottom-color: #afafaf;
+    --border-image: 1px solid white;
+    --blackColor: rgba(0, 0, 0, 0.9);
+    --font-color: white;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
 #main{
     display: flex;
     height: 100vh;
+    width: 100vw;
+    background: var(--blackColor);
+    color: var(--font-color);
 }
 .left{
-    width: 40%;
-    height: 100%;
+    flex: 1 1 40%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/images/backgroundImage.png);
+    background-position: center;
+    background-size: auto;
 }
 .right{
-    width: 60%;
-    height: 100%;
+    flex: 1 1 60%;
+}
+.logo, .credits{
+    border-top: var(--border-image);
+    border-bottom: var(--border-image);
+}
+.logo{
+    display: flex;
+    background-color: var(--blackColor);
+    width: 100%;
+    height: 130px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+svg{
+    width: 95px;
+    height: 95px;
+}
+
+#moonTop, #moonBottom {
+    stroke: var(--font-color);
+    stroke-width: 1.5%;
+}
+#moonTop{
+    fill: var(--moonTop-color);
+    opacity: 0.9;
+
+}
+#moonBottom {
+    fill: var(--moonBottom-color);
+    opacity: 0.8;
+}
+
+#logoTitle{
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+.credits{
+    padding: 15px 0;
+    padding-right: 0px;
+    width: 100%;
+    background-color: var(--blackColor);
+    text-align: center;
+    font-weight: 300;
+}
+.space{
+    width: 100%;
+    flex-grow: 1;
+    border-right: var(--border-image);
 }
