@@ -139,7 +139,11 @@ input,button{
 }
 a{
     text-decoration: none;
-    color: rgb(176, 176, 29);
+    color: rgb(232, 232, 40);
+    font-weight: 700;
+}
+a:hover{
+    color: rgb(255, 255, 73);
 }
 .formContainer {
     height: 65%;
@@ -164,7 +168,9 @@ input:focus{
 button:hover{
     background-color: rgb(211, 211, 32) ;
 }
-
+button:active{
+    background-color: rgb(236, 221, 107);
+}
 input:valid {
     border: 2px solid green;
   }
